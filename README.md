@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioRAG: Biomedical Retrieval-Augmented Generation</title>
 </head>
 <body>
     <h1>BioRAG: Biomedical Retrieval-Augmented Generation</h1>

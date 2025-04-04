@@ -28,11 +28,11 @@ from sklearn.cluster import AgglomerativeClustering
 import faiss  # For efficient vector retrieval
 
 # Set up your API keys
-os.environ['SERPAPI_API_KEY'] = '2cb59bcf7aa19d173738e7017edf03135fe6dc90f4f9da992442192817f4f350 '
-os.environ['TAVILY_API_KEY'] = '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'
+os.environ['SERPAPI_API_KEY'] = ''
+os.environ['TAVILY_API_KEY'] = ''
 
 def get_pubmed_data(query, max_results=10):
-    Entrez.email = "udayasri142003@gmail.com"  # Replace with your email
+    Entrez.email = "nvyshnavi36@gmail.com"  # Replace with your email
     handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results)
     record = Entrez.read(handle)
     handle.close()
@@ -48,7 +48,7 @@ def get_wikipedia_data(query):
     # Specify the user-agent explicitly in the constructor
     wiki = wikipediaapi.Wikipedia(
         language='en',
-        user_agent='BiomedicalResearchTool/1.0 (udayasri142003@gmail.com)'
+        user_agent='BiomedicalResearchTool/1.0 (nvyshnavi36@gmail.com)'
     )
 
     # Get the page for the given query
